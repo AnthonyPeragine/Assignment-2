@@ -1,0 +1,11 @@
+1. a) true
+   b) true
+   c) false
+   d) false
+   e) false
+   f) true
+   g) true
+
+2. These two statements behave the same. The one on the left turns right when karel
+can pick something up. The one on the right turns left if karel cannot pick something up.
+This means that they behave the same, one is just written in reverse order.
