@@ -51,6 +51,7 @@ public class A2Q4 {
 
         //patrol routine
         while (true) {
+            //first quarter patrol
             while (jet.getStreet() == 0) {
                 jet.move();
                 if (jet.getAvenue() == 2 && jet.getStreet() == 0) {
@@ -66,11 +67,13 @@ public class A2Q4 {
                     jet.turnLeft();
                     jet.turnLeft();
                 }
+                //turns to next patrol
                 if (jet.getAvenue() == 5 && jet.getStreet() == 0) {
                     jet.turnLeft();
                     jet.turnLeft();
                     jet.turnLeft();
                 }
+                //second quarter patrol
                 while (jet.getAvenue() == 5) {
                     jet.move();
                     if (jet.getStreet() == 2 && jet.getAvenue() == 5) {
@@ -86,51 +89,56 @@ public class A2Q4 {
                         jet.turnLeft();
                         jet.turnLeft();
                     }
-                    if(jet.getStreet() == 5){
+                    //turns to next patrol
+                    if (jet.getStreet() == 5) {
                         jet.turnLeft();
                         jet.turnLeft();
-                        jet.turnLeft(); 
+                        jet.turnLeft();
                     }
-                    while(jet.getStreet() == 5){
+                    //third quarter patrol
+                    while (jet.getStreet() == 5) {
                         jet.move();
-                        if(jet.getAvenue() == 3 && jet.getStreet() == 5){
-                            jet.turnLeft();
-                        jet.turnLeft();
-                        jet.turnLeft();
-                        jet.move();
-                        jet.turnLeft();
-                        jet.move();
-                        jet.turnLeft();
-                        jet.move();
-                        jet.turnLeft();
-                        jet.turnLeft();
-                        jet.turnLeft();
-                        }
-                        if(jet.getAvenue() == 0){
+                        if (jet.getAvenue() == 3 && jet.getStreet() == 5) {
                             jet.turnLeft();
                             jet.turnLeft();
                             jet.turnLeft();
-                        }
-                        while(jet.getAvenue() == 0){
                             jet.move();
-                            if(jet.getStreet() == 3 && jet.getAvenue() == 0){
+                            jet.turnLeft();
+                            jet.move();
+                            jet.turnLeft();
+                            jet.move();
+                            jet.turnLeft();
+                            jet.turnLeft();
+                            jet.turnLeft();
+                        }
+                        //turns to next patrol
+                        if (jet.getAvenue() == 0) {
+                            jet.turnLeft();
+                            jet.turnLeft();
+                            jet.turnLeft();
+                        }
+                        //last quarter patrol
+                        while (jet.getAvenue() == 0) {
+                            jet.move();
+                            if (jet.getStreet() == 3 && jet.getAvenue() == 0) {
                                 jet.turnLeft();
-                        jet.turnLeft();
-                        jet.turnLeft();
-                        jet.move();
-                        jet.turnLeft();
-                        jet.move();
-                        jet.turnLeft();
-                        jet.move();
-                        jet.turnLeft();
-                        jet.turnLeft();
-                        jet.turnLeft();
+                                jet.turnLeft();
+                                jet.turnLeft();
+                                jet.move();
+                                jet.turnLeft();
+                                jet.move();
+                                jet.turnLeft();
+                                jet.move();
+                                jet.turnLeft();
+                                jet.turnLeft();
+                                jet.turnLeft();
                             }
-                            if(jet.getStreet() == 0 && jet.getAvenue() == 0){
+                            //turns to beginning patrol
+                            if (jet.getStreet() == 0 && jet.getAvenue() == 0) {
                                 jet.turnLeft();
                                 jet.turnLeft();
                                 jet.turnLeft();
-                                
+
                             }
                         }
                     }
