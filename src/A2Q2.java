@@ -53,6 +53,7 @@ public class A2Q2 {
 
 
             }
+            //jumps a hurdle
             if (!jet.frontIsClear()) {
                 jet.turnLeft();
                 jet.move();
